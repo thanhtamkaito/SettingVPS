@@ -1,17 +1,4 @@
-"  _   ____  __  _  _________  ___  _______  __  _________  ___  _______ 
-" | | / / / / / / |/ / ___/ / / \ \/ / __/ |/ / / ___/ __ \/ _ \/ __/ _ \
-" | |/ / /_/ / /    / (_ / /_/ / \  / _//    / / /__/ /_/ / // / _// , _/
-" |___/\____/ /_/|_/\___/\____/  /_/___/_/|_/  \___/\____/____/___/_/|_|
-" Vim customized by Vu Nguyen Coder
-" (See my detailed tutorial here: https://youtu.be/Tp8i1EHsQ1Q )
-"
-" http://youtube.com/VuNguyenCoder
-" http://facebook.com/VuNguyenCoder
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set mouse=a                 " Enable mouse
 set tabstop=2               " 
 set shiftwidth=2            " 
