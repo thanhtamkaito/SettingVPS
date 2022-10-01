@@ -1,0 +1,12 @@
+sudo apt install slim -y
+
+sudo apt install lightdm -y
+
+sudo apt install ubuntu-desktop -y
+
+sudo reboot
+
+sudo service slim start
+
+
+
