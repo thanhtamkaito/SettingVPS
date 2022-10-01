@@ -1,8 +1,12 @@
 sudo apt install slim -y
 
+sudo apt install xrdp -y
+
 sudo apt install lightdm -y
 
 sudo apt install ubuntu-desktop -y
+
+sudo apt-get install xfce4-session xfce4-goodies -y
 
 sudo reboot
 
