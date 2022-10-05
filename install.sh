@@ -32,12 +32,21 @@ sudo apt-get install gcc -y
 sudo apt-get install nmap -y
 sudo apt install netcat-traditional -y
 sudo apt install unicorn -y
+
+sudo apt  install docker.io -y
+sudo apt  install docker-compose -y
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+sudo usermod -a -G docker $USER
+sudo chmod 664 /var/run/docker.sock
+su -s ${USER}
+
 curl -fLo ~/.var/app/io.neovim.nvim/data/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
+sudo reboot
 
 
 
