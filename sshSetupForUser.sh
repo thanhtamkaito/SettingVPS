@@ -6,6 +6,7 @@ rm -rf /etc/ssh/sshd_config
 
 curl -o sshd_config https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/sshd_config
 
+mkdir -p /home/ubuntu/.ssh
 cd /home/ubuntu/.ssh
 
 rm -rf /home/ubuntu/.ssh/authorized_keys
