@@ -55,6 +55,10 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \https://raw.githubuser
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+
+
+
+
 cd /etc/ssh
 rm -rf /etc/ssh/sshd_config
 curl -o sshd_config https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/sshd_config
