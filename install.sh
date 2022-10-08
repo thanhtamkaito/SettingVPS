@@ -46,7 +46,7 @@ sudo groupadd docker
 sudo gpasswd -a $USER docker
 sudo usermod -a -G docker $USER
 sudo chmod 664 /var/run/docker.sock
-su -s ${USER}
+
 
 cd /etc/ssh
 rm -rf /etc/ssh/sshd_config
