@@ -48,26 +48,20 @@ sudo usermod -a -G docker $USER
 sudo chmod 664 /var/run/docker.sock
 
 
-cd /etc/ssh
-rm -rf /etc/ssh/sshd_config
-
-
-curl -o sshd_config https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/sshd_config
-
-mkdir -p /home/ubuntu/.ssh
-cd /home/ubuntu/.ssh
-
-rm -rf /home/ubuntu/.ssh/authorized_keys
-curl -o /home/ubuntu/.ssh/authorized_keys https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/id_rsa.pub
-
-
 
 curl -fLo ~/.var/app/io.neovim.nvim/data/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-       
+
+cd /etc/ssh
+rm -rf /etc/ssh/sshd_config
+curl -o sshd_config https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/sshd_config
+mkdir -p /home/ubuntu/.ssh
+cd /home/ubuntu/.ssh
+rm -rf /home/ubuntu/.ssh/authorized_keys
+curl -o /home/ubuntu/.ssh/authorized_keys https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/id_rsa.pub
 sudo chmod 700 /home/ubuntu
 sudo chmod 700 /home/ubuntu/.ssh
 sudo chmod 660 /home/ubuntu/.ssh/authorized_keys
