@@ -43,8 +43,8 @@ sudo apt install jenkins
 sudo apt  install docker.io -y
 sudo apt  install docker-compose -y
 sudo groupadd docker
-sudo gpasswd -a $USER docker
-sudo usermod -a -G docker $USER
+sudo gpasswd -a ubuntu docker
+sudo usermod -a -G docker ubuntu
 sudo chmod 664 /var/run/docker.sock
 
 
