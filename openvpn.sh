@@ -8,7 +8,7 @@ sudo bash openvpn-install.sh
 sudo systemctl restart openvpn-server@server.service
 sudo find / -type f -name "kaito.ovpn"
 sudo cp /root/kaito-04.ovpn .
-scp ubuntu@thanhtam-hust.tech:kaito.ovpn f:/
+scp root@thanhtam-hust.tech:/root/kaito.ovpn f:/
 
 
 
