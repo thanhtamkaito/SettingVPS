@@ -1,6 +1,9 @@
 Port 22
 #AddressFamily any
 ListenAddress 0.0.0.0
+GatewayPorts yes
+AllowTcpForwarding yes
+
 #ListenAddress ::
 
 #HostKey /etc/ssh/ssh_host_rsa_key
