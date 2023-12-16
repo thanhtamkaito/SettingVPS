@@ -1,0 +1,20 @@
+cd /etc/ssh
+rm -rf /etc/ssh/sshd_config
+
+
+curl -o sshd_config https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/sshd_config
+
+mkdir -p /home/jenkins/.ssh
+cd /home/jenkins/.ssh
+
+rm -rf /home/jenkins/.ssh/authorized_keys
+curl -o /home/jenkins/.ssh/authorized_keys https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/id_rsa.pub
+
+sudo chown -R jenkins:jenkins /home/jenkins
+sudo chmod 700 /home/jenkins
+sudo chmod 700 /home/jenkins/.ssh
+sudo chmod 660 /home/jenkins/.ssh/authorized_keys
+sudo chown -R jenkins:jenkins /home/jenkins/.ssh/authorized_keys
+
+systemctl restart sshd
+systemctl status sshd
