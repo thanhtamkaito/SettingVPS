@@ -1,17 +1,5 @@
 
 
-sudo apt-get remove openssh-server openssh-client --purge && sudo apt-get autoremove && sudo apt-get autoclean && sudo apt-get update
-sudo apt-get install openssh-server openssh-client
-
-
-
-cd /etc/ssh
-rm -rf /etc/ssh/sshd_config
-curl -o sshd_config https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/sshd_config
-
-
-######################################
-
 cd /root/.ssh
 rm -rf /root/.ssh/authorized_keys
 curl -o /root/.ssh/authorized_keys https://raw.githubusercontent.com/thanhtamkaito/SettingVPS/setup/id_rsa.pub
