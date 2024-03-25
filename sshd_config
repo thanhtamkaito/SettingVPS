@@ -44,7 +44,7 @@ AuthorizedKeysFile     .ssh/authorized_keys .ssh/authorized_keys2 .ssh/authorize
 #IgnoreRhosts yes
 
 # To disable tunneled clear text passwords, change to no here!
-#PasswordAuthentication yes
+PasswordAuthentication yes
 #PermitEmptyPasswords no
 
 # Change to yes to enable challenge-response passwords (beware issues with
@@ -74,8 +74,8 @@ ChallengeResponseAuthentication no
 # and ChallengeResponseAuthentication to 'no'.
 UsePAM yes
 
-#AllowAgentForwarding yes
-#AllowTcpForwarding yes
+AllowAgentForwarding yes
+AllowTcpForwarding yes
 #GatewayPorts no
 X11Forwarding yes
 #X11DisplayOffset 10
