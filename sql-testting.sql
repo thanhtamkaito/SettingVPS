@@ -16,14 +16,6 @@ CREATE TABLE Products (
     CreatedDate DATETIME DEFAULT GETDATE()
 );
 
-CREATE TABLE Suppliers (
-    SupplierID INT IDENTITY(1,1) PRIMARY KEY,
-    SupplierName NVARCHAR(100),
-    ContactEmail NVARCHAR(100),
-    CreatedDate DATETIME DEFAULT GETDATE()
-);
-
-
 CREATE TABLE Orders (
     OrderID INT IDENTITY(1,1) PRIMARY KEY,
     CustomerID INT,
@@ -45,16 +37,6 @@ CREATE TABLE OrderItems (
 
 
 
-
-
-SET NOCOUNT ON;
-DECLARE @i INT = 1;
-WHILE @i <= 1000
-BEGIN
-    INSERT INTO Suppliers (SupplierName, ContactEmail)
-    VALUES ('Supplier' + CAST(@i AS NVARCHAR(50)), 'supplier' + CAST(@i AS NVARCHAR(50)) + '@example.com');
-    SET @i = @i + 1;
-END;
 
 SET @i = 1;
 WHILE @i <= 10000
