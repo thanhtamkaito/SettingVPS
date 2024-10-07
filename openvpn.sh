@@ -13,6 +13,16 @@ scp root@103.166.185.178:/root/kaito.ovpn f:/
 
 
 
+sudo cp /path/to/your-client.ovpn /etc/openvpn/client/client.conf
+
+sudo chmod 600 /etc/openvpn/client/client.conf
+
+sudo systemctl enable openvpn-client@client
+
+sudo systemctl start openvpn-client@client
+
+sudo systemctl status openvpn-client@client
+
 
 
 
