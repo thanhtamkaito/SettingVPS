@@ -25,6 +25,16 @@ sudo systemctl status openvpn-client@client
 
 
 
+############## Auto connect client UBUNTU ################
+sudo cp ci-server.ovpn /etc/openvpn/ci-server.conf
+sudo systemctl enable openvpn@ci-server
+systemctl start openvpn@ci-server
+systemctl status openvpn@ci-server
+
+
+
+
+
 
 
 
