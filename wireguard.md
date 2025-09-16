@@ -38,3 +38,8 @@ netsh advfirewall firewall add rule name="Allow ICMPv4 Outbound to WireGuard" pr
 ####### Fix Forwarding  Traffic
 sudo iptables -S FORWARD   ## View Rules
 
+
+### NSSM
+nssm install MyBatService "C:\Windows\System32\cmd.exe" /c "C:\scripts\my-script.bat"
+
+nssm remove MyBatService confirm
