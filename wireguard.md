@@ -54,7 +54,10 @@ nssm stop startVagrant
 nssm edit startVagrant
 
 nssm install startVagrant "C:\HashiCorp\Vagrant\bin\vagrant.exe"
+
 nssm set startVagrant AppParameters "up"
+
 nssm set startVagrant AppDirectory "C:\vagrant\projects\myproject"
+
 nssm start startVagrant
 
