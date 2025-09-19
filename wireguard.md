@@ -61,3 +61,11 @@ nssm set startVagrant AppDirectory "C:\vagrant\projects\myproject"
 
 nssm start startVagrant
 
+nssm status startVagrant
+
+sc query startVagrant
+
+sc config startVagrant start= auto
+
+
+
