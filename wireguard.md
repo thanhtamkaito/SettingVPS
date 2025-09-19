@@ -43,3 +43,18 @@ sudo iptables -S FORWARD   ## View Rules
 nssm install MyBatService "C:\Windows\System32\cmd.exe" /c "C:\scripts\my-script.bat"
 
 nssm remove MyBatService confirm
+
+nssm install startVagrant "C:\full\path\to\vagrant.exe"
+
+#### 
+nssm start startVagrant
+
+nssm stop startVagrant
+
+nssm edit startVagrant
+
+nssm install startVagrant "C:\HashiCorp\Vagrant\bin\vagrant.exe"
+nssm set startVagrant AppParameters "up"
+nssm set startVagrant AppDirectory "C:\vagrant\projects\myproject"
+nssm start startVagrant
+
